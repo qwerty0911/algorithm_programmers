@@ -2,9 +2,8 @@ def solution(arr):
     
     answer = []
     
-    tmp = 10
     for value in arr:
-        if tmp != value:
+        if not answer or answer[-1] != value:
             answer.append(value)
             tmp = value
     
